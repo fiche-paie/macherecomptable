@@ -483,6 +483,7 @@
                 doc.save("bulletin_paie_" + nomSalarie.replace(/\s+/g, '_') + ".pdf");
                 alert("Fiche de paie générée avec succès !");
             };
+
             // Fonction utilitaire pour convertir une couleur hexadécimale en RGB
             function hexToRgb(hex) {
                 const bigint = parseInt(hex.slice(1), 16);
@@ -490,8 +491,11 @@
                 const g = (bigint >> 8) & 255;
                 const b = bigint & 255;
                 return { r, g, b };
+            }
+        };
+    </script>
 
-      }
+           <script>
         // Fonction pour désactiver le clic droit
         document.addEventListener('contextmenu', function(event) {
             event.preventDefault(); // Empêche l'action par défaut (menu contextuel)
@@ -502,8 +506,7 @@
         document.addEventListener('selectstart', function(event) {
             event.preventDefault();
         });
-
-       
     </script>
+  
 </body>
 </html>
